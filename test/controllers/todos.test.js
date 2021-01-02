@@ -70,7 +70,7 @@ describe("create", () => {
       title: "Lavar ropa",
       description: "Debo lavar la ropa",
     });
-    expect(res.statusCode).toEqual(201);
+    expect(res.statusCode).toEqual(200);
   });
   it("Exception", async () => {
     todos.create = jest.fn().mockRejectedValueOnce(new Error("Foo"));
