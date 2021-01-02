@@ -1,58 +1,59 @@
 # TODO Backend API
 
-Este proyecto se realizo con la finalidad de crear una **API** para la prueba de **Addika**.
+This project was carried out in order to create an **API** for the **Addika** test.
 
-## PreRequisitos
+## Prerequisites
 
-Para correr el servidor es necesario tener instalado:
+To run the server it is necessary to have installed:
 
-- **NodeJS** en su versión **12.18.x** [NodeJs](https://nodejs.org/en/blog/release/v12.18.4/).
-- **NPM** en su versión **6.14.x**
-- **PostgreSQL** en su versión **13** [PostgreSQL](https://www.postgresql.org/download/)
+- **NodeJS** in the version **12.18.x** [NodeJs](https://nodejs.org/en/blog/release/v12.18.4/).
+- **NPM** in the version **6.14.x**
+- **PostgreSQL** in the version **13** [PostgreSQL](https://www.postgresql.org/download/)
 
-## Configuraciones ⚙
+## Settings ⚙
 
-### Base de datos
+### Database
 
-Es necesario ingresar al archivo **config.json** que se encuentra dentro de la carpeta config en la raiz del proyecto, posteriormente configurar en ese archivo sus credenciales de postgres("nombre de base de datos, nombre de usuario y contraseña").
-Por default se necesita tener una base de datos llamada **"todo"**, un usuario llamado postgres con la contraseña **root**
+It is necessary to enter the **config.json** file that is inside the config folder at the root of the project,
+later configure in this file your postgres credentials ("database name, username and password").
+By default you need to have a database called **"todo"**, a username called postgres with the password **root**
 
-### Variables de entorno
+### Environment Variables
 
-En la raiz del proyecto existe un archivo **.env** con la posibilidad de configurar el puerto en la cual el proyecto corre.
-Por default es: 4000
+In the root of the project there is a file **.env** with the possibility of configuring the port in which the project runs.
+Default is: 4000
 
 ## Running the server
 
-Una vez instalado lo anterior, se deberá correr el siguiente comando:
+Once the above is installed and configured, the following command should be run:
 
 ```
 npm install
 ```
 
-Una vez instalado todo, se deberá correr las migraciones con el siguiente comando:
+Once everything is installed, the migrations must be run with the following command:
 
 ```
 npm run migrate
 ```
 
-Este proyecto utiliza nodemon para facilitar la inicialización del proyecto en modo desarrollo, de la siguiente manera:
+This project uses nodemon to facilitate the initialization of the project in development mode, as follows:
 
 ```
 npm run start:dev
 ```
 
-Si no es requerido inicializar el proyecto con nodemon, se puede hacer de la siguiente manera:
+If it is not required to initialize the project with nodemon, it can be done as follows:
 
 ```
 npm run start
 ```
 
-## Documentación
+## Documentation
 
-En la raiz del proyecto se encuentra una carpeta con el nombre de **doc** en la cual hay una collección de [Postman](https://www.postman.com/downloads/) que contiene todos los endpoints con su respectivos ejemplos.
+At the root of the project there is a folder with the name of **doc** in which there is a collection of [Postman](https://www.postman.com/downloads/) It contains all the endpoints with their respective examples.
 
-## Dependencias
+## Dependencies
 
 | Package   | Info                                    |
 | --------- | --------------------------------------- |
@@ -64,7 +65,7 @@ En la raiz del proyecto se encuentra una carpeta con el nombre de **doc** en la 
 
 ## Unit test
 
-Para las pruebas unitarias se utilizo [Jest](https://jestjs.io/docs/en/getting-started) y para ejecutar dichas pruebas es necesario:
+For the unit tests i use [Jest](https://jestjs.io/docs/en/getting-started) and to run these tests it is necessary:
 
 ```
 npm install
@@ -76,12 +77,12 @@ npm run test
 
 ## License
 
-El proyecto usa una licencia de tipo [ISC](https://opensource.org/licenses/ISC)
+The project uses a license of type [ISC](https://opensource.org/licenses/ISC)
 
-## Autor
+## Author
 
 [Alberto Ochoa](https://www.linkedin.com/in/alberto-ochoa-de-la-torre-340410171/)
 
-## Comentarios
+## Additional Comments
 
-En los endpoints se cambio el parametro name por description, ya que en el lado del frontend no coincidia con el nombre de las variables.
+In the endpoints, the name parameter was changed to description, since on the frontend side it does not match the name of the variables.
